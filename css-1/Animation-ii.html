@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-ii-animate</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            position: relative;
+            animation-name: one;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes one {
+            0% {
+                top: 0;
+                left: 0;
+                background-color: blue;
+            }
+            25% {
+                top: 0;
+                left: 50%;
+                background-color: black;
+            }
+            50% {
+                top: 500px;
+                left: 50%;
+                background-color: yellow;
+            }
+            75% {
+                top: 500px;
+                left: 0;
+                background-color: red;
+            }
+            100% {
+                top: 0;
+                left: 0;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

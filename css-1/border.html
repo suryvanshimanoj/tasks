@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            /* border-style: solid;
+            border-width: 10px;
+            border-color: red; */
+            /* border: 2px solid red; */
+            border-top: 2px solid yellow;
+            border-right: 3px double black;
+            border-bottom: 4px dotted blue;
+            border-left: 3px dashed green;
+            /* border: 2px solid black; */
+            border-radius: 50%;
+            /* border-bottom-right-radius: 50%;
+            border-top-left-radius: 50%; */
+        }
+        #one{
+            height:50px ;
+            width: 50px;
+            background-color: red;
+            margin: 20px;
+            border-top: 2px solid blue;
+            border-right: 3px double green;
+            border-bottom: 4px dotted yellow;
+            border-left: 3px dashed black;
+        }
+        marquee{
+            margin-top: 15px;
+        }
+        .two{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 0;
+            background-color: yellow;
+            outline-style: dashed;
+            outline-width: 5px;
+            outline-color: red;
+            outline: dotted blue 2px;
+            outline-offset: 15px;
+            margin-top: 80px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="one">
+            <marquee behavior="" direction="">Hiiii</marquee>
+        </div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>

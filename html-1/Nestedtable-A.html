@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestedtable-A</title>
+</head>
+<body>
+    <!--table-start-->
+    <table border="1" cellpadding="5">
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Colspan column</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row cell</td>
+            <td align="center">Cell 2</td>
+        </tr>
+        <tr>
+            <td>
+                <table border="1" cellpadding="10" cellspacing="5" bgcolor="yellow">
+                    <tr>
+                        <td>inner col head1</td>
+                        <td>inner col head2</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">inner data cell 1</td>
+                    </tr>
+                    <td>
+                        <table border="1" cellpadding="10" cellspacing="5" bgcolor="red">
+                            <tr>
+                                <td>inner most col head1</td>
+                                <td>inner most col head2</td>
+                            </tr>
+                            <tr>
+                                <td>inner data cell1</td>
+                                <td>inner data cell2</td>
+                            </tr>
+                        </table>
+                    </td>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-table-manoj</title>
+</head>
+
+<body>
+    <form action="">
+        <table border="1" bgcolor="#CCCCCC" align="center" width="500px" cellpadding="8">
+            <caption>Registration Form</caption>
+            <tr>
+                <th><label for="fn">Enter youer first name:</label></th>
+                <td><input type="text" name="myname" id="fn" maxlength="10" placeholder="enter your first name" required></td>
+            </tr>
+            <tr>
+                <th><label for="ln">Enter youer last name:</label></th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th><label for="pwd">Enter youer password:</label></th>
+                <td><input type="password" name="mypwd" id="pwd" minlength="5" maxlength="7"></td>
+            </tr>
+            <tr>
+                <th><label for="pwd">ReEnter youer password:</label></th>
+                <td><input type="password" name="mypwd" id="pwd" minlength="5" maxlength="7"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Enter youer Email:</label></th>
+                <td><input type="email" name="myemail" id="email"></td>
+            </tr>
+            <tr>
+                <th><label for="">Enter youer mobile</label></th>
+                <td><input type="password" name="mypwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <th><label for="">Enter youer address</label></th>
+                <td><textarea name="" id="" cols="20" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="g">Enter youer gender</label></th>
+                <td>
+                    <label for="g">Male</label>
+                    <input type="radio" name="g" id="g">
+                    <label for="g">Female</label>
+                   <input type="radio" name="g" id="g">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="">Select youer hobbies</label></th>
+                <td>
+                    <label for="">hobbies1</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">hobbies2</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">hobbies3</label>
+                    <input type="checkbox" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="dob">Select youer DOB</label></th>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+            <tr>
+                <th><label for="">Select youer Country</label></th>
+                <td>
+                    <select name="mycountry" id="">
+                        <option value=""selected disabled>select youer country</option>
+                        <option value="1">India</option>
+                        <option value="">Pakistan</option>
+                        <option value="">America</option>
+                        <option value="">Frans</option>
+                        <option value="">Rusia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="">Select youer file</label></th>
+                <td><input type="file" name="myfile" id=""></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" bgcolor="red"><input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

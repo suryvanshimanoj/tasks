@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gradiant</title>
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+      margin-top: 30px;
+      float: left;
+      margin-right: 20px;
+      color: white;
+      padding-left: 10px;
+      background-image: linear-gradient(45deg, red 20%, green);
+    }
+
+    .head {
+      height: 200px;
+      width: 200px;
+      background-image: repeating-linear-gradient(red 10%, green 20%, black 30%);
+    }
+
+    .logo {
+      height: 200px;
+      width: 200px;
+      background-image: radial-gradient(red 10%, blue, green);
+    }
+
+    .link {
+      height: 200px;
+      width: 200px;
+      background-image: repeating-radial-gradient(red 10%, black 20%, blue 30%);
+    }
+
+    .slide {
+      height: 200px;
+      width: 200px;
+      background-image: conic-gradient(red, black, blue, yellow, green);
+    }
+    .main {
+        height: 200px;
+        width: 200px;
+        background-image: repeating-conic-gradient(red 10%,black 15%,blue 18%,yellow 20%,green 25%);
+      } 
+      .main1 {
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(red 0deg 90deg,black 90deg 180deg, blue 180deg 270deg, yellow 270deg 360deg);
+      }
+  </style>
+</head>
+
+<body>
+  <div> linear-gradient</div>
+
+  <div class="head">repeating-linear-gradient</div>
+
+  <div class="logo">radial-gradient</div>
+
+  <div class="link">repeating-radial-gradient</div>
+
+  <div class="slide">conic-gradient</div>
+  
+  <div class="main">repeating-conic-gradient</div>
+
+  <div class="main1"></div>
+
+
+</body>
+
+</html>

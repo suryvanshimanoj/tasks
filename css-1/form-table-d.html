@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-table-d</title>
+    <style>
+        div {
+            height: 420px;
+            width: 500px;
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 5px;
+
+
+        }
+
+        table {
+            width: 90%;
+            background-color: rgb(23, 85, 88);
+            padding-top: 10px;
+            border-radius: 10px;
+            padding-left: 8px;
+            padding-right: 15px;
+            padding-bottom: 30px;
+            font-size: 22px;
+
+
+        }
+
+        small {
+            color: darkgray;
+            padding-top: 10px;
+
+        }
+
+        td {
+            color: white;
+            font-size: 11px;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            height: 30px;
+            font-size: 12px;
+            border: none;
+            box-sizing: border-box;
+            outline: none;
+            border-radius: 2px;
+        }
+        input[type="checkbox"] {
+            width: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+            float: right;
+        }
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 35px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+        }
+        input[type="submit"]:hover {
+            background-color: aqua;
+            color: red;
+        }
+        span {
+            color: blue;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div>
+            <h2>Login form using HTML and CSS</h2>
+            <center>
+                <table >
+                    <tr>
+                        <th>sing in</th>
+                    </tr>
+                    <tr>
+                        <td align="center"><small>Sing in whith your username and password</small></td>
+                    </tr>
+                    <tr>
+                        <td>Your username</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Enter Username" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Your password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" placeholder="Enter Password" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">Remember me
+                            <a href="">Forgot Password?</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Login">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            Not a member?<span>Register here!</span>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-a</title>
+    <style>
+         .container {
+            overflow: hidden;
+            height: 400px;
+        }
+        @keyframes slideIn {
+            from {
+                margin-left: 100%;
+                transform: rotate(180deg);
+            }
+            to {
+                margin-left: 0%;
+                transform:rotate(0deg);
+            }
+        }
+        img {
+            width:10%;
+            height: 50%;
+            animation-name: slideIn;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/home-1/Images/images-1.jpeg" alt="">
+    </div>
+</body>
+</html>
