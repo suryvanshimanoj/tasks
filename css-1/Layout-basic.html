@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-basic</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        /* header Start..........................*/
+        .header {
+            width: 80%;
+            margin: auto;
+            background-color: #304f80;
+            display: flex;
+        }
+
+        .logo {
+            width: 20%;
+            font-size: 18px;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 25px;
+            justify-content: center;
+            margin-left: 100px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .link {
+            height: inherit;
+            width: 60%;
+            margin: auto;
+        }
+
+        .l1 a {
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 14px;
+            padding-right: 30px;
+        }
+
+        button {
+            border: 2px solid dodgerblue;
+            background-color: #304f80;
+            color: white;
+            width: 120px;
+            height: 40px;
+            margin: auto;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: aqua;
+            color: black;
+        }
+
+        /* main start.........................*/
+        .main {
+            height: inherit;
+            width: 80%;
+            margin: auto;
+            background-color: #304f80;
+            color: aliceblue;
+            padding-left: 25px;
+           
+            padding-bottom: 100px;
+           
+        }
+
+        .main1 {
+            height: inherit;
+            width: 40%;
+            color: white;
+            float: left;
+        }
+
+        .m1 h2 {
+            height: inherit;
+            color: white;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: center;
+            padding-top: 100px;
+            margin-left: 75px;
+        }
+
+        .m2  {
+            
+            color: lightgray;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            padding-top: 10px;
+            margin-left: 75px;
+
+        }
+
+        .m3 {
+            height: inherit;
+            color: white;
+            margin-top: 50px;
+            margin-left: 75px;
+            display: flex;
+        }
+
+        .mm1 {
+            border: 1px solid lightblue;
+            max-width: 120px;
+            padding: 5px 10px 5px 8px;
+            border-radius: 18px;
+            text-align: center;
+            font-size: 18px;
+            background-color: rgb(105, 211, 247);
+           
+        }
+
+        .img {
+            height: inherit;
+            padding-left: 25px;
+            padding-top: 5px;
+
+        }
+
+        .m3 a {
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-left: 5px;
+            padding-top: 10px;
+        }
+        .main2 {
+            height: inherit;
+            width: 40%;
+            display: flex;
+            margin: auto;
+            padding-top: 50px;
+        }
+        .footer {
+            height: 50px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-top: 20px;
+            padding-left: 75px;
+            background-color: white;
+        }
+        .footer a {
+            text-decoration: none;
+            color: black;
+            padding-right: 100px;
+            font-size: 20px;
+        }
+        span{
+            color: rgb(206, 202, 202);
+        }
+        .f1 {
+            height: 90px;
+            width: 80%;
+            background-color: white;
+            color: #304f80;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: center;
+            display: flex;
+            margin: auto;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header Start-->
+    <div class="header">
+        <div class="logo">
+            <a href=""> ARSHA</a>
+        </div>
+        <div class="link">
+            <div class="l1">
+                <a href=""><span style="color: dodgerblue;">Home</span></a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Portfolio</a>
+                <a href="">Team</a>
+                <a href="">Drop Down</a>
+                <a href="">Contect</a>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+    <!--main start-->
+    <div class="main">
+        <div class="main1">
+            <div class="m1">
+                <h2>Better Solutions For<br> Your Business</h2>
+            </div>
+            <div class="m2">
+                We are team of talanted designers making<br> websites with Bootstrap
+            </div>
+            <div class="m3">
+                <div class="mm1">
+                    Get Started
+                </div>
+                <div class="img">
+                    <img src="/home-1/Images/p-m.jpg" alt="">
+                </div>
+                <a href="">Watch Video</a>
+            </div>
+        </div>
+        <div class="main2">
+            <img src="/home-1/Images/images-55.jpg"  alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <a href="">myob</a>
+        <a href="">BELIMO</a>
+        <a href="">
+            Life<span>Groups</span>
+        </a>
+        <a href="">Lilly </a>
+        <a href="">citrus</a>
+        <a href="">Trustly</a>
+    </div>
+    <div class="f1">
+        ABOUT US
+    </div>
+</body>
+
+</html>

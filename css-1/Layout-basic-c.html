@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-basic-c</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        /*.......Header Start..................................*/
+        .head {
+            width: 950px;
+            display: flex;
+            margin: auto;
+            margin-top: 100px;
+            background-color: #1f2224;
+            box-shadow: 0px 50px 70px #1f2224;
+        }
+
+        .logo {
+            height: inherit;
+            width: 20%;
+            color: white;
+            display: flex;
+        }
+
+        .img-holder {
+            height: 50px;
+            margin-left: 30px;
+            margin-top: 10px;
+            display: flex;
+        }
+
+        h5,
+        h6 {
+            margin: 0px;
+        }
+
+        .logo h5 {
+            color: rgb(196, 192, 192);
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 15px;
+            margin-left: 10px;
+
+        }
+
+        .link {
+            height: inherit;
+            width: 80%;
+            display: flex;
+            margin-top: 25px;
+            margin-left: 240px;
+        }
+
+        .link a {
+            text-decoration: none;
+            color: rgb(196, 192, 192);
+            font-size: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-right: 25px;
+        }
+
+        a:hover {
+            color: antiquewhite;
+        }
+
+        .link span {
+            color: antiquewhite;
+        }
+        .link span:hover{
+            color: rgb(196, 192, 192);
+        }
+
+        /*.......Maim Start..................................*/
+        .main {
+            height: inherit;
+            width: 950px;
+            background-color: #1f2224;
+            margin: auto;
+            box-shadow: 0px 50px 70px #1f2224;
+            display: flex;
+        }
+
+        .main1 {
+            height: inherit;
+            width: 50%;
+        }
+
+        .m1 h6 {
+            color: rgb(196, 192, 192);
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 3px;
+            padding-top: 100px;
+            padding-left: 25px;
+        }
+
+        h4 {
+            color: white;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 25px;
+            padding-left: 30px;
+        }
+
+        span {
+            color: rgb(248, 55, 93);
+        }
+
+        h3 {
+            color: white;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 25px;
+            padding-left: 30px;
+        }
+        h3 span {
+            opacity: 0.2;
+            color: rgb(196, 192, 192);
+            font-weight: 200;
+        }
+
+        p {
+            color: rgb(196, 192, 192);
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 25px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+
+        .main2 {
+            height: inherit;
+            width: 50%;
+        }
+
+        .img-2 {
+            margin-top: 40px;
+            margin-left: 180px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-------Header Start------------------------------------------------------>
+    <div class="head">
+        <div class="logo">
+            <div class="img-holder">
+                <img src="/home-1/Images/mp1.jpg" alt="">
+                <h5>INBIO</h5>
+            </div>
+            <div class="link">
+                <a href=""><span>HOME</span></a>
+                <a href="">FEATURES</a>
+                <a href="">PORTFOLIO</a>
+                <a href="">RESUME</a>
+                <a href="">CLIENTS</a>
+                <a href="">PRICING</a>
+                <a href="">CLOG</a>
+                <a href="">CONTECT</a>
+            </div>
+        </div>
+    </div>
+    <!-------Main Start------------------------------------------------------>
+    <div class="main">
+        <div class="main1">
+            <div class="m1">
+                <h6>WELCOME TO WORLD</h6>
+                <h4>Hi, I'm <span> Jone Lee</span>
+                    <h3>a Developr.<span>|</span></h3>
+                    <p>
+                        I use animation as third dimension by which to simplify experiences and<br>
+                        kuiding thro each and every interaction. I'm not adding mation just to spruce<br>
+                        things up, but doing it in ways that.</p>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="img-2">
+                <img src="/home-1/Images/Untitled.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

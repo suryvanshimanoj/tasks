@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            position: relative;
+            top: 200px;
+            left: 20%;
+        }
+        .two {
+            height: 150px;
+            width: 150px;
+        }
+        #one-1 {
+            background-color: red;
+            position: absolute;
+            top: 200px;
+            left: 70%;
+            z-index: 1;
+        }
+        #one-2 {
+            background-color: yellow;
+            position: absolute;
+            top: 100px;
+            left: 80%;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index</h1>
+    <div>
+        <div class="two" id="one-1">1</div>
+        <div class="two" id="one-2">2</div>
+    </div>
+</body>
+</html>

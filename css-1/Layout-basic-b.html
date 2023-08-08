@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-basic-b</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+         /*---------------Header Start-----------------------------*/
+        .head {
+            height: 50px;
+            background-color: black;
+            display: flex;
+        }
+
+        .logo {
+            height: inherit;
+            width: 20%;
+            color: white;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin-left: 130px;
+            margin-top: 15px;
+        }
+
+        .link {
+            height: inherit;
+            width: 80%;
+            color: white;
+            margin-top: 20px;
+
+        }
+
+        .l1 a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-right: 100px;
+        }
+        .l1 a:hover {
+            text-decoration-line: underline;
+            padding-top: 5px;
+            color: rgb(106, 162, 247);
+            text-decoration-thickness: 2px;
+        }
+         /*---------------Main Start-----------------------------*/
+        .main {
+            height: inherit;
+            background-color: blue;
+            display: flex;
+        }
+        
+        .m1 {
+            height: 230px;
+            columns: 4;
+            column-gap: 70px;
+            margin-top: 100px;
+            margin-left: 230px;
+            display: flex;
+
+        }
+
+        .m2 h1 {
+            color: white;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .m2 p {
+            color: aquamarine;
+            font-size: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        }
+
+        .m2 button {
+            border: 1px solid lightgray;
+            background-color: lightgray;
+            color: black;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .m2 button:hover {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+
+        .m3 h1 {
+            color: white;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .m3 p {
+            color: aquamarine;
+            font-size: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        }
+
+        .m3 button {
+            border: 1px solid lightgray;
+            background-color: lightgray;
+            color: black;
+            border-radius: 30px;
+            width: 60px;
+            height: 30px;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+        .m3 button:hover {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+
+        .m4 h1 {
+            color: white;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .m4 p {
+            color: aquamarine;
+            font-size: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        }
+
+        .m4 button {
+            border: 1px solid lightgray;
+            background-color: lightgray;
+            color: black;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+        .m4 button:hover {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+         /*---------------Main-2 Start-----------------------------*/
+        .main2 {
+            height: inherit;
+            background-color: rgb(245, 240, 240);
+            border-bottom: 2px solid rgb(187, 185, 185);
+            display: flex;
+        }
+
+        .mm1 {
+            height: 300px;
+        }
+
+        .mm2 p {
+            font-size: 14px;
+            display: flex;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 10px;
+            padding-left: 600px;
+
+
+        }
+
+        .mm3 {
+            columns: 4;
+            column-gap: 20px;
+            display: flex;
+            margin: auto;
+            padding-top: 60px;
+            padding-left: 230px;
+
+
+        }
+
+        img {
+            height: 180px;
+            width: 200px;
+            border-radius: 15px;
+        }
+        /*---------------Main-3 Start-----------------------------*/
+        .main3 {
+            height: inherit;
+            background-color: white;
+            display: flex;
+        }
+
+        .n1 {
+            height: 300px;
+        }
+
+        .n2 {
+            font-size: 14px;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 30px;
+            padding-left: 600px;
+
+
+        }
+
+        .n3 {
+            padding-top: 40px;
+            margin-left: 200px;
+            column-count: 4;
+            column-gap: 30px;
+            column-rule: 1px ridge rgb(231, 228, 228);
+
+
+        }
+
+        .n3 h6 {
+            font-size: 10px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-bottom: 20px;
+
+        }
+
+        .n3 a {
+            font-size: 11px;
+            color: rgb(11, 187, 187);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .n3 p {
+            font-size: 12px;
+            color: rgb(194, 185, 185);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-top: 20px;
+        }
+
+        .n4 h6 {
+            font-size: 10px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-bottom: 20px;
+        }
+
+        .n4 a {
+            font-size: 11px;
+            font-weight: bold;
+            color: rgb(73, 160, 247);
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration-line: underline;
+        }
+
+        .n4 p {
+            font-size: 12px;
+            color: rgb(194, 185, 185);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration-line: underline;
+            padding-top: 20px;
+        }
+
+        .n5 h6 {
+            font-size: 10px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-bottom: 20px;
+        }
+
+        .n5 a {
+            font-size: 11px;
+            color: rgb(11, 187, 187);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .n5 p {
+            font-size: 12px;
+            color: rgb(194, 185, 185);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            word-spacing: 4px;
+            padding-top: 20px;
+        }
+
+        .n6 h6 {
+            font-size: 10px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-bottom: 20px;
+        }
+
+        .n6 a {
+            font-size: 11px;
+            color: rgb(11, 187, 187);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .n6 p {
+            font-size: 12px;
+            color: rgb(194, 185, 185);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            word-spacing: 4px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------Header Start----------------------------->
+    <div class="head">
+        <div class="logo">
+            iBuild
+        </div>
+        <div class="link">
+            <div class="l1">
+                <a href="" title="home" target="_blank">Home</a>
+                <a href="">About us</a>
+                <a href="">Products</a>
+                <a href="">Services </a>
+                <a href="">Contects</a>
+            </div>
+        </div>
+    </div>
+    <!---------------Main Start----------------------------->
+    <div class="main">
+        <div class="m1">
+            <div class="m2">
+                <h1>&nbsp; &nbsp; &nbsp;PROJECT <br> MANAGEMENT</h1>
+                <p>Our team is skilled at <br>successfully
+                    completing <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; project.</p>
+
+                <button>More</button>
+            </div>
+            <div class="m3">
+                <h1>INNOVATION AND<br> &nbsp; &nbsp; &nbsp; DIVERSITY</h1>
+                <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Infrastructure are<br> approached with creativity
+                    and<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;innovation
+                </p>
+                <button>More</button>
+            </div>
+            <div class="m4">
+                <h1>A PROFESSIONAL<br> &nbsp; &nbsp; &nbsp;APPROACH</h1>
+                <p>We have also won significant<br>contects purely on a quality<br> &nbsp; &nbsp; &nbsp; &nbsp;
+                    selection basis.</p>
+                <button>More</button>
+            </div>
+            <div class="m3">
+                <h1>A SUSTAINABLE<br> &nbsp; &nbsp; &nbsp; &nbsp;FUTURE</h1>
+                <p>We're proud of the developments<br> &nbsp; &nbsp; &nbsp;we've worked on, visit our<br> &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; online gallery.</p>
+                <button>More</button>
+            </div>
+        </div>
+    </div>
+    <!---------------Main-2 Start----------------------------->
+    <div class="main2">
+        <div class="mm1">
+            <div class="mm2">
+                <p> RECENT PROJECTS</p>
+            </div>
+            <div class="mm3">
+                <img src="/home-1/Images/page1-img5.jpg" alt="">
+                <img src="/home-1/Images/page1-img6.jpg" alt="">
+                <img src="/home-1/Images/page1-img7.jpg" alt="">
+                <img src="/home-1/Images/page1-img8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!---------------Main-3 Start------------------------------->
+    <div class="main3">
+        <div class="n1">
+            <div class="n2">
+                LATEST NEWS
+            </div>
+            <div class="n3">
+                <h6>18 April,2013</h6>
+                <a href="">Lorem ipsum dolor sit amet,con<br>sectetuer adipiscing.</a>
+                <p>Lorem ispum dolor sit amet, consectetuer<br>adipiscing elit,sed diam
+                    nonummy nidh<br>euismod tincidunt ut laoreet dolore magna<br>aliquam
+                    erat volutpat.</p>
+
+                <div class="n4">
+                    <h6>16 April,2013</h6>
+                    <a href="">Lorem ispum dolor sit amet,<br> consectetueradipiscing elit,sed<br> diam
+                        nonummy ni.</a>
+                    <p>Lorem ispum dolor sit amet, consectetuer<br>adipiscing elit,sed diam
+                        nonummy nidh<br>euismod tincidunt ut laor.</p>
+                </div>
+                <div class="n5">
+                    <h6>13 April,2013</h6>
+                    <a href="">Lorem ipsum dolor sit amet,con<br>sectetuer adipiscing.</a>
+                    <p>Lorem ispum dolor sit amet, consectetuer<br>adipiscing elit,sed diam
+                        nonummy nidh<br>euismod tincidunt ut laoreet dolore magna<br>aliquam
+                        erat volutpat.</p>
+                </div>
+                <div class="n6">
+                    <h6>10 April,2013</h6>
+                    <a href="">Lorem ispum dolor sit amet,<br> consectetueradipiscing elit,sed<br> diam
+                        nonummy ni.</a>
+                    <p>Lorem ispum dolor sit amet, consectetuer<br>adipiscing elit,sed diam
+                        nonummy nidh<br>euismod tincidunt ut.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

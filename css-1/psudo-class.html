@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudoClass</title>
+    <style>
+        a {
+            text-decoration: none;
+
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: yellow;
+            font-size: 50px;
+        }
+
+        a:active {
+            color: grey;
+        }
+
+        input[type="text"] {
+            border: none;
+            border-bottom: 2px solid black;
+            box-shadow: 0 0 10px red;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+        }
+
+        input[type="number"]:in-range {
+            border: 2px solid green;
+        }
+
+        input[type="number"]:out-of-range {
+            border: 2px solid red;
+        }
+
+        /* p:first-child{
+            background-color: red;
+        }
+        p:last-child{
+            background-color: green;
+        }
+        p:nth-child(2){
+            background-color: aqua;
+        } */
+        p:nth-child(odd) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="dsrsererewr">Home</a>
+    <input type="text" name="" id="">
+    <input type="number" name="" id="" min="0" max="5">
+    <div>
+        <p>fty</p>
+        <p>fgyhf</p>
+        <p>fgh</p>
+        <p>ghjg</p>
+        <p>sdnf</p>
+    </div>
+</body>
+
+</html>

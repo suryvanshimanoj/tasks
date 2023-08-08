@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudoClass-i</title>
+    <style>
+       a {
+         text-decoration: none;
+       }
+       a:link {
+        color: violet;
+       }
+       a:visited {
+        color: red;
+       }
+       a:hover {
+        color: blue;
+       }
+       a:active {
+        color: lawngreen;
+       }
+       input[type="text"] {
+        border: none;
+        border-bottom: 2px solid black;
+        box-shadow: 0px 0px 5px aqua;
+       }
+       input[type="text"]:focus {
+        outline: none;
+       }
+       input[type="number"]:in-range {
+        border: 2px solid red;
+       }
+       input[type="number"]:out-of-range {
+         border: 2px solid yellow;
+       }
+       p:first-child {
+        color: red;
+       }
+       p:last-child {
+        color: blue;
+       }
+       P:nth-child(odd) {
+        color: greenyellow;
+       }
+    </style>
+</head>
+<body>
+    <a href="mgnlheog">Home</a>&nbsp; &nbsp; &nbsp;
+    <input type="text"> &nbsp; &nbsp; &nbsp; 
+    <input type="number" name="" id="" min="0" max="5">
+
+    <div>
+        <p>manoj</p>
+        <p>monu</p>
+        <p>suraj</p>
+        <p>shiv</p>
+        <p>sachin</p>
+    </div>
+
+</body>
+</html>

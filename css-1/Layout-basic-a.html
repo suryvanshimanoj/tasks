@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-basic-a</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* header Start ............................................*/
+        .head {
+            height: 100px;
+            margin: auto;
+            background-color: #304f80;
+            display: flex;
+        }
+        .logo {
+            height: inherit;
+            width: 20%;
+            padding-top: 30px;
+            padding-left: 140px;
+           
+        }
+        .lo a {
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .link {
+            height: inherit;
+            width: 80%;
+            padding-top: 30px;
+            margin-left: 150px;
+            
+        }
+        .l1 a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-right: 25px;
+            padding-left: 10px;
+        }
+        .l1 a:hover {
+            color: dodgerblue;
+        }
+        .l1 span {
+            color: dodgerblue;
+        }
+        span:hover {
+            color: white;
+        }
+        button {
+            border: 2px solid dodgerblue;
+            background-color: #304f80;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 140px;
+            height: 50px;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: dodgerblue;
+        }
+        /* Main Start ..............................................*/
+        .main {
+            height: 600px;
+            background-color: aquamarine;
+            display: flex;
+        }
+        .main1 {
+            height: inherit;
+            width: 50%;
+            background-color: #304f80;
+        }
+        .m1 h1 {
+            color: white;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 140px;
+            padding-top: 150px;
+        }
+        .m2 p {
+            color: rgb(197, 196, 196);
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-left: 140px;
+            padding-top: 20px;
+        }
+        .m3 { 
+            font-size: 20px;
+            font-family:serif;
+            padding-left: 140px;
+            padding-top: 80px;
+            display: flex;
+        }
+        .m3 a {
+            text-decoration: none;
+            color: white;
+           border: 1px solid dodgerblue;
+           border-radius: 30px;
+           padding-left: 20px;
+           padding-right: 20px;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           background-color: rgb(19, 178, 241);
+        }
+        .m3 a:hover {
+            background-color: blue;
+            border: 1px solid blue;
+        }
+        .m3 img {
+            
+            padding-left: 25px;
+            height: 25px;
+            padding-top: 10px;
+        }
+        .m4 {
+            font-size: 15px;
+            color: white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 15px;
+            padding-left: 10px;
+        }
+        .main2 {
+            height: inherit;
+            width: 50%;
+            background-color: #304f80;
+        }
+        .ma1 img{
+            height: 450px;
+            padding-top: 70px;
+            padding-left: 50px;
+        }
+        /* Footer Start ...........................................................*/
+        .footer {
+            height: 100px;
+        }
+        .f1 {
+            height: inherit;
+            background-color: rgb(236, 233, 233);
+            padding-top: 50px;
+            padding-left: 130px;
+            word-spacing: 120px;
+        }
+        .f1 a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 5px 5px 10px black;
+        }
+        .f1 span{
+            color: rgb(223, 214, 214);
+        }
+        .f2 {
+            height: 50%;
+            background-color: white;
+            color: #304f80;
+            font-size: 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!----Heder Start--------------------------------------->
+    <div class="head">
+        <div class="logo">
+            <div class="lo">
+                <a href="">ARSHA</a>
+            </div>
+        </div>
+        <div class="link">
+            <div class="l1">
+                <a href=""><span>Home</span></a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Portfolio</a>
+                <a href="">Team</a>
+                <a href="">Drop Down</a>
+                <a href="">Contects</a>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+    <!----Main Start--------------------------------------->
+    <div class="main">
+        <div class="main1">
+            <div class="m1">
+                <h1>Better Solutions For<br> Your Business</h1>
+            </div>
+            <div class="m2">
+                <p>We are team of talanted designers making<br> websites with Bootstrap</p>
+            </div>
+            <div class="m3">
+                <a href="">Get Started</a>
+                <img src="/home-1/Images/p-m.jpg" alt="">
+               <div class="m4">
+                Watch Video
+               </div>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="ma1">
+                <img src="/home-1/Images/images-55.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!----Footer Start--------------------------------------->
+    <div class="footer">
+        <div class="f1">
+            <a href="">myob</a>
+            <a href="">BELIMO</a>
+            <a href="">
+                Life<span>Groups</span>
+            </a>
+            <a href="">Lilly </a>
+            <a href="">citrus</a>
+            <a href="">Trustly</a>
+        </div>
+        <div class="f2">
+            ABOUT US
+        </div>
+    </div>
+</body>
+</html>
