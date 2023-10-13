@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading {
+            font-size: 28px;
+            font-weight: lighter;
+            border-bottom: 1px solid rgb(0, 183, 255);
+        }
+
+        .ft {
+            font-weight: bold;
+            padding-top: 10px;
+        }
+
+        /* .date1, .date2 */
+        input[type=date] {
+            width: 150px;
+            height: 30px;
+            padding: 5px 10px;
+            margin: 10px 0 0 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        #calculate {
+            width: 100px;
+            height: 30px;
+            margin: 10px 0 10px 0;
+            background-color: rgb(38, 136, 174);
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .fw {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <!-- DATE INTERVAL -->
+        <tr align="center">
+            <th colspan="2" class="heading">Date Interval</th>
+        </tr>
+
+        <!-- FROM -->
+        <tr>
+            <td class="fw">From:</td>
+            <td><input type="date" id="fromDate" class="form-control"></td>
+        </tr>
+
+        <!-- TO -->
+        <tr>
+            <td class="fw">To:</td>
+            <td><input type="date" id="toDate" class="form-control"></td>
+        </tr>
+
+        <!-- CALCULATE -->
+        <tr align="center">
+            <td colspan="2">
+                <input type="submit" value="calculate" id="calculate" onclick="calculateDataDetails()">
+            </td>
+        </tr>
+
+        <!-- RESULT -->
+        <tr>
+            <td colspan="2">
+                <div id="result" class="alert alert-info" style="display: none;"></div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+<script>
+      function calculateDataDetails(){
+        var fromDate = new Date (document.getElementById("fromDate").value);
+        var toDate = new Date (document.getElementById("toDate").value);
+
+        if (isNaN(fromDate) || isNaN(toDate)) {
+          alert ("Please select valid dates!")
+          return;
+        }
+       
+        var TimeDiff = toDate.getTime() - fromDate.getTime();
+        var DaysDiff = Math.ceil(TimeDiff / (1000 * 3600 * 24));
+        var WeeksDiff = Math.ceil(DaysDiff / 7);
+        var MonthsDiff = (toDate.getMonth() + 1) - (fromDate.getMonth() + 1) + (toDate.getFullYear() - fromDate.getFullYear()) * 12;
+        var YearDiff = toDate.getFullYear() - fromDate.getFullYear(); 
+
+        var result = document.getElementById("result");
+        result.innerHTML = "Date Internal between" + "<br>";
+        result.innerHTML += fromDate.toDateString() + " and " + toDate.toDateString() + "<hr><hr>";
+        result.innerHTML += "In Years : " + YearDiff + "<br>";
+        result.innerHTML += "In Months : " + MonthsDiff + "<br>";
+        result.innerHTML += "In Weeks : " + WeeksDiff + "<br>";
+        result.innerHTML += "In days : " + DaysDiff + "<hr><hr>";
+        result.style.display = "block";
+      }
+    
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtering-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <h2>gk</h2>
+    </div>
+    <div>
+        <h2>dk</h2>
+    </div>
+    <div id="one">
+        <h2>hk</h2>
+    </div>
+    <div>
+        <h2>html</h2>
+    </div>
+    <div>
+        <h2>jk</h2>
+    </div>
+    <div>
+        <h2>sk</h2>
+    </div>
+    <script>
+        $(document).ready(function () {
+           // $("div").first().css({"border":"2px solid blue"})
+           // $("div").last().css({"border":"2px solid blue"})
+           // $("div").filter("#one").css({"border":"2px solid blue"})
+           // $("div").not("#one").css({"border":"2px solid blue"})
+           $("div").eq(3).css({"border":"2px solid blue"})
+        })
+    </script>
+</body>
+</html>

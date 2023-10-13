@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basicValid</title>
+</head>
+<body>
+    <form method="post" action="pic_bulboff.gif" onsubmit="return ValidData()">
+        <table border="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                <td><input type="text" name="mobile" id="mobile"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+   function ValidData()
+   {
+    var name = document.getElementById('name').value;
+    if(name == "")
+    {
+        alert("Please enter name!");
+        document.getElementById('name').focus();
+        return false;
+    }
+    var email = document.getElementById('email').value;
+    if(email == "")
+    {
+        alert("Please enter email!");
+        document.getElementById('email').focus();
+        return false;
+    }
+    var pwd = document.getElementById('pwd').value;
+    if(pwd == "")
+    {
+        alert("Please enter pwd!");
+        document.getElementById('pwd').focus();
+        return false;
+    }
+    var mobile = document.getElementById('mobile').value;
+    if(mobile == "")
+    {
+        alert("Please enter mobile!");
+        document.getElementById('mobile').focus();
+        return false;
+    }
+   }
+</script>

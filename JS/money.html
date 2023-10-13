@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>money</title>
+    <style>
+        input {
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid rgb(175, 173, 173);
+        }
+        td {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body bgcolor="lightgray">
+    <table>
+        <h3><font color="blue">Money Counter Calculator</font></h3>
+        <tr>
+            <td>2000</td>
+            <td><input type="number" name="" id="one" onkeyup="a()" placeholder="0"></td>
+            <td id="two">0</td>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td><input type="number" name="" id="three" onkeyup="a()" placeholder="0"></td>
+            <td id="four">0</td>
+        </tr>
+        <tr>
+            <td>500</td>
+            <td><input type="number" name="" id="five" onkeyup="a()" placeholder="0"></td>
+            <td id="six">0</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td><input type="number" name="" id="seven" onkeyup="a()" placeholder="0"></td>
+            <td id="eight">0</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td><input type="number" name="" id="nine" onkeyup="a()" placeholder="0"></td>
+            <td id="ten">0</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td><input type="number" name="" id="eleven" onkeyup="a()" placeholder="0"></td>
+            <td id="twelve">0</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><input type="number" name="" id="thirteen" onkeyup="a()" placeholder="0"></td>
+            <td id="fourteen">0</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><input type="number" name="" id="fifteen" onkeyup="a()" placeholder="0"></td>
+            <td id="sixteen">0</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><input type="number" name="" id="seventeen" onkeyup="a()" placeholder="0"></td>
+            <td id="eighteen">0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="number" name="" id="ninteen" onkeyup="a()" placeholder="0"></td>
+            <td id="twenty">0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>TOTAL</td>
+            <td id="twentyone">0</td>
+        </tr>
+    </table>
+    <script>
+        function a() {
+            var n1=document.getElementById("one").value
+            var r1=document.getElementById("two").innerHTML=2000*n1
+
+            var n2=document.getElementById("three").value
+            var r2=document.getElementById("four").innerHTML=1000*n2
+
+            var n3=document.getElementById("five").value
+            var r3=document.getElementById("six").innerHTML=500*n3
+
+            var n4=document.getElementById("seven").value
+            var r4=document.getElementById("eight").innerHTML=200*n4
+
+            var n5=document.getElementById("nine").value
+            var r5=document.getElementById("ten").innerHTML=100*n5
+
+            var n6=document.getElementById("eleven").value
+            var r6=document.getElementById("twelve").innerHTML=50*n6
+
+            var n7=document.getElementById("thirteen").value
+            var r7=document.getElementById("fourteen").innerHTML=20*n7
+
+            var n8=document.getElementById("fifteen").value
+            var r8=document.getElementById("sixteen").innerHTML=10*n8
+
+            var n9=document.getElementById("seventeen").value
+            var r9=document.getElementById("eighteen").innerHTML=5*n9
+             
+            var re=document.getElementById("twentyone").innerHTML=r1+r2
+        }
+    </script>
+</body>
+</html>

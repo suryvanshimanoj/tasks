@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addclass-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .one{
+            background-color: blue;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">jquery</div>
+    <button>xyz</button>
+    <script>
+        $(document).ready(function () {
+           $("button").click(function () {
+           // $("div").addClass("one")
+            $("div").removeClass("one")
+           }) 
+        })
+    </script>
+</body>
+</html>

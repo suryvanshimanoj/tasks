@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .one {
+            height: 100px;
+            width: 100px;
+            background-color: navy;
+            margin-top: 10px;
+           /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <div class="one" id="two1"></div>
+    <div class="one" id="two2"></div>
+    <div class="one" id="two3"></div>
+    <button>xyz</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+               // $("#two1").fadeIn(),$("#two2").fadeIn(3000),$("#two3").fadeIn("slow")
+               // $("#two1").fadeOut(),$("#two2").fadeOut(3000),$("#two3").fadeOut("slow")
+               // $("#two1").fadeToggle(),$("#two2").fadeToggle(3000),$("#two3").fadeToggle("slow")
+                $("#two1").fadeTo("slow",.2),$("#two2").fadeTo(3000,.3),$("#two3").fadeTo("slow",.2)
+
+
+            })
+        })
+    </script>
+</body>
+</html>

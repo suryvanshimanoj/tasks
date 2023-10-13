@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>money-i</title>
+</head>
+<body bgcolor="lightgray">
+    <table>
+        <tr>
+            <td>2000</td>
+            <td><input type="number" name="" id="one1" onkeyup="a()" placeholder="0"></td>
+            <td id="two2">0</td>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td><input type="number" name="" id="three3" onkeyup="a()" placeholder="0"></td>
+            <td id="four4">0</td>
+        </tr>
+        <tr>
+            <td>500</td>
+            <td><input type="number" name="" id="five5" onkeyup="a()" placeholder="0"></td>
+            <td id="six6">0</td>
+        </tr>
+        <script>
+            function a() {
+                var n1=document.getElementById("one1").value
+                var r1=document.getElementById("two2").innerHTML=2000*n1
+
+                var n2=document.getElementById("three3").value
+                var r2=document.getElementById("four4").innerHTML=1000*n2
+
+                var n3=document.getElementById("five5").value
+                var r3=document.getElementById("six6").innerHTML=500*n3
+            } 
+        </script>
+    </table>
+</body>
+</html>

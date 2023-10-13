@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaining-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>jquery</div>
+    <button>xyz</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+               // $("div").slideDown(3000).slideUp(3000)
+                $("div").css({"color":"red"})
+                $("div").slideToggle(3000)
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finish-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <button id="one">xyz</button>
+    <button id="two">finish</button>
+    <div></div>
+    <script>
+        $ (document).ready(function () {
+            $("#one").click(function () {
+                $("div").animate({"height":"500px"},3000)
+                $("div").animate({"width":"500px"},3000)
+            })
+            $("#two").click(function () {
+                $("div").finish()
+            })
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button>xyz</button>
+    <script>
+        $(document).ready(function () {
+           // $("button").click(function () {
+             //   $("div").animate({"left":"20%","width":"200px","height":"200px"})
+              //  $("div").css({"background-color":"blue"})
+           // })
+            $("button").click(function (params) {
+                $("div").animate({"height":"toggle"})
+              // $("div").animate({"width":"toggle"})
+               $("div").css({"background-color":"red"})
+            })
+        })
+    </script>
+</body>
+</html>

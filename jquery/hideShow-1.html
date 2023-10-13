@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide-show-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .one {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="one" id="two1">1</div>
+    <div class="one" id="two2">2</div>
+    <div class="one" id="two3">3</div> 
+    <button>xyz</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+               // $("#two1").hide(), $("#two2").hide(3000), $("#two3").hide("slow")
+              // $("#two1").show(),$("#two2").show(3000),$("#two3").show("slow")
+               $("#two1").toggle(),$("#two2").toggle(3000),$("#two3").toggle("slow")
+
+            })
+        })
+    </script>
+</body>
+</html>

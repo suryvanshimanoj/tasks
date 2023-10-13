@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            justify-items: baseline;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab illo saepe odio cum unde temporibus repellat eos iure. Asperiores exercitationem consequuntur soluta dignissimos, perferendis excepturi? Illo dolorum ullam ab adipisci!</div>
+    <button>xyz</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+               // $("div").remove()
+                $("div").empty()
+
+            })
+        })
+    </script>
+</body>
+</html>

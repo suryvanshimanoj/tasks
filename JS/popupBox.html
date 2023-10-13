@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popupBox</title>
+</head>
+
+<body>
+    <!-- there are 3 types of popup boxes 
+    1.alert box
+    2.prompt box
+    3.confirm box -->
+    <p id="one"></p>
+    <button onclick="a()">xyz</button>
+    <script>
+        // Alert Box
+        // function a() {
+        //     alert("How Are You!!")
+        // }
+        // Confirm Box
+        // function a() {
+        //     var txt
+        //     if (confirm ("jhk")) {
+        //         txt = "OK"
+        //     } else {
+        //         txt = "NO"
+        //     }
+        //     document.getElementById("one").innerHTML = txt
+        // }
+        // Prompt
+
+        function a() {
+            var txt
+            var per=prompt("Enter Your Name")
+            if (per =="" || per == null) {
+                txt="plz enter your name"
+            } else {
+                txt="HII "+per+" How Are You"
+            }
+            document.getElementById("one").innerHTML=txt
+        }
+    </script>
+</body>
+
+</html>

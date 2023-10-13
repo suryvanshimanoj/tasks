@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch-DYNAMIC</title>
+</head>
+
+<body>
+    <p id="one"></p>
+    <script>
+        var day
+        switch (new Date().getDay()) {
+            case 1:
+                day = "Mon"
+                break;
+            case 2:
+                day = "tue"
+                break;
+            case 3:
+                day = "wed"
+                break;
+            case 4:
+                day = "thu"
+                break;
+            case 5:
+                day = "fri"
+                break;
+            case 6:
+                day = "sat"
+                break;
+            case 7:
+                day = "sun"
+
+
+        }
+        //document.getElementById("one").innerHTML = day
+        document.getElementById("one").innerHTML = "Today Is"+ "<br>"+day
+
+    </script>
+</body>
+
+</html>

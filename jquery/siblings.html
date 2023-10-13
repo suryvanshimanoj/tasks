@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siblings</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>srg</h1>
+        <h2>rg</h2>
+        <h3>fg</h3>
+        <h4>df</h4>
+        <h5>fgh</h5>
+        <h6>th</h6>
+        <p>tr</p>
+    </div>
+    <div>
+        <h1>srtguil</h1>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // $("h4").siblings().css({ "border": "2px solid red"})
+            // $("h4").prev().css({ "border": "2px solid red"})
+            // $("h4").prevAll().css({ "border": "2px solid red"})
+            // $("h4").prevUntil("h1").css({ "border": "2px solid red"})
+            // $("h4").next().css({ "border": "2px solid red"})
+            // $("h4").nextAll().css({ "border": "2px solid red"})
+            $("h4").nextUntil("p").css({ "border": "2px solid red"})
+        })
+    </script>
+</body>
+</html>
