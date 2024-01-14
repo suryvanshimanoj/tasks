@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result-3</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h2>Enter Your Code:</h2>
+        <input type="text" id="code" onkeyup="text()" placeholder="Enter Your Code">
+
+        <hr>
+        <h1>Enter Your Mark</h1>
+        <form action="#" onsubmit="return result()">
+            Hindi : <input type="number" id="hindi" required><br><br>
+            English : <input type="number" id="english" required><br><br>
+            Gujarati : <input type="number" id="gujarati" required><br><br>
+            <input type="submit" id="english">
+
+            <h1 id="result"></h1>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    function text() {
+        document.getElementById('code').style.textTransform="uppercase";
+    }
+
+    function result() 
+    {
+        var hindi = document.getElementById('hindi').value;
+        var english = document.getElementById('english').value;
+        var gujarati = document.getElementById('gujarati').value;
+
+        var total=+hindi + +english + +gujarati;
+        var perc = (total*100)/300;
+        if (perc<=40) 
+        {
+            document.getElementById("result").innerHTML="Your Total is " + total + " and per % is " + perc + ": Fail"; 
+
+            document.getElementById("result").style.color="red";
+			return false;
+
+        } else if (perc>40 && perc<=60) {
+            document.getElementById("result").innerHTML="Your Total is " + total + " and per % is " + perc + ": pass class"; 
+
+            document.getElementById("result").style.color="Green";
+			return false;
+        } else if (perc>60 && perc<=70) {
+            document.getElementById("result").innerHTML="Your Total is " + total + " and per % is " + perc + ": first class"; 
+
+            document.getElementById("result").style.color="Green";
+			return false;
+        }
+        else{
+            document.getElementById("result").innerHTML="Your Total is " + total + " and per % is " + perc + ": Dist class"; 
+
+            document.getElementById("result").style.color="Green";
+			return false;
+        }
+    }
+</script>

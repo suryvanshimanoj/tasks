@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart-task</title>
+</head>
+<body>
+    <br><br>
+    <input type="submit" value="+" onclick="plus()">
+    <span id="test">1</span>
+    <input type="submit" value="-" onclick="minus()">
+
+    <br><br><br><br>
+
+    <input type="submit" value="+" onclick="plus1()">
+    <input type="text" id="demo" value="1" min="0">
+    <input type="submit" value="-" onclick="minus1()">
+</body>
+</html>
+<script>
+    function plus() 
+    {
+       var value = document.getElementById('test').innerHTML;
+       value++;
+       document.getElementById('test').innerHTML=value;
+    }
+    function minus() 
+    {
+       var value = document.getElementById('test').innerHTML;
+       value--;
+       document.getElementById('test').innerHTML=value; 
+    }
+
+    function plus1() 
+    {
+       var a = document.getElementById('demo').value;
+       a++;
+       document.getElementById('demo').value=a; 
+    }
+    function minus1() 
+    {
+        var a = document.getElementById('demo').value;
+        a--;
+        if (a<0) 
+        {
+            
+        } 
+        else 
+        {
+            document.getElementById('demo').value=a;
+        }
+    }
+</script>

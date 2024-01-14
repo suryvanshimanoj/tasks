@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+    <form  action="" method="post" onsubmit="return validation()">
+        <table border="1" align="center">
+            <tr>
+                <th>Registration_page</th>
+            </tr>
+            <tr>
+                <th>User First Name:-</th>
+                <td><input type="text" name="ufn" id="ufn"></td>
+            </tr>
+            <tr>
+                <th>User Last Name:-</th>
+                <td>
+                    <input type="text" name="uln">
+                    <span style="color: blue;" id="ulnmsg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <form name="myform1" action="" method="post" onsubmit="return validation1()">
+        <table border="1" align="center">
+            <tr>
+                <th>Registration_form</th>
+            </tr>
+            <tr>
+                <th>User First Name:- </th>
+                <td><input type="text" name="ufn" id="ufn"></td>
+            </tr>
+            <tr>
+                <th>User Last Name:-</th>
+                <td>
+                    <input type="text" name="uln" id="uln">
+                    <span style="color: red;" id="ulnmsg1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit1"></td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h1 align="center" id="msg" style="color: red;"></h1>
+    <form action="" method="post" onsubmit="return validation2(this)">
+        <table border="1" align="center">
+            <tr>
+                <th>Registration_page</th>
+            </tr>
+            <tr>
+                <th>User First Name:-</th>
+                <td><input type="text" name="ufn" id="ufn"></td>
+            </tr>
+            <tr>
+                <th>User Last Name:-</th>
+                <td><input type="text" name="uln" id="uln"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit2"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    function validation() 
+    {
+        var ufn=document.getElementById('ufn').value;
+        if (ufn=="" || ufn==null) 
+        {
+            alert("Field is required");
+            return  false;
+        }
+        var uln=document.getElementById('uln').value;
+        if (uln=="" || uln==null) 
+        {
+           document.getElementById('ulnmsg').innerHTML="uln Field is required";
+           return false; 
+        }
+    }
+</script>
+<script>
+    function validation1() 
+    {
+        var ufn = document.forms['myform1'] ['ufn'].value;
+        if (ufn=="" || ufn==null) 
+        {
+            alert("Field is required from form1");
+            return false;
+        }
+        var uln=document.forms['myforms1'] ['uln'].value;
+        if (uln=="" || uln==null) 
+        {
+         document.getElementById('ulnmsg1').innerHTML="uln Field is required from form1"   
+        }
+    }
+</script>
+<script>
+    function validation2(str) 
+    {
+       if (str.ufn.value=="") 
+       {
+        document.getElementById('msg').innerHTML="! Please enter Some Value in User Name";
+        str.ufn.focus();
+        return false;
+       } 
+       if (str.uln.value=="") 
+       {
+        document.getElementById('msg').innerHTML="! Please enter Some Value in User Last Name";
+        str.uln.focus();
+        return false;
+       }
+    }
+</script>

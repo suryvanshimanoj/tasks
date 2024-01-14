@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_validation</title>
+</head>
+
+<body>
+    <form name="myform" action="" method="post" onsubmit="return validate()">
+        <table border="1" align="center">
+            <tr>
+                <th>Registration_form</th>
+            </tr>
+            <tr> 
+                <th>User First Name:-</th>
+                <td>
+                    <input type="text" name="ufn">
+                    <span style="color:red" id="un"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>User Name:-</th>
+                <td><input type="text" name="un"></td>
+            </tr>
+            <tr>
+                <th>Password:-</th>
+                <td><input type="password" name="pass"></td>
+            </tr>
+            <tr>
+                <th>Confirm Password:-</th>
+                <td><input type="password" name="cpass"></td>
+            </tr>
+            <tr>
+                <th>Email Address:-</th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>Phone:-</th>
+                <td><input type="text" name="pno"></td>
+            </tr>
+            <tr>
+                <th>Phone:-</th>
+                <td><input type="text" name="pno"></td>
+            </tr>
+            <tr>
+                <th>Hobby:-</th>
+                <td>
+                    Reading <input type="checkbox" name="chk" value="reading">
+                    Music <input type="checkbox" name="chk" value="music">
+                    Outing <input type="checkbox" name="chk" value="outing">
+                    Cricket <input type="checkbox" name="chk" value="cricket">
+                </td>
+            </tr>
+            <tr>
+                <th>Gender:-</th>
+                <td>
+                    Male <input type="radio" name="gender" value="m">
+
+                    Female <input type="radio" name="gender" value="f">
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><input type="submit" id="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
+<script>
+    function validate() {
+        var ufn = document.forms["myform"]["ufn"].value;
+        if (ufn == "" || ufn == null) // for null condition
+        {
+            alert('Please fill out the User First Name'); // alert msg
+            return false;
+        }
+        var alpha = /^[A-Za-z]+$/;
+        if (!alpha.test(ufn)) {
+            alert('Please fill out the User First Name');
+            return false;
+        }
+        var un = document.forms["myform"]["un"].value;
+        if (un == "" || un == null) {
+            document.getElementById("un").innerHTML = "Please fill out the User  Name";
+            return false;
+        }
+        else {
+            document.getElementById("un").innerHTML = "";
+        }
+        var pass = document.forms["myform"]["pass"].value;
+        if (pass == "" || pass == null)  // for null condition
+        {
+            alert('Please fill out the pass');  // alert msg
+            return false;   //return false means msg show and again on same page with value not refresh page
+        }
+
+        if (!(pass.length >= 3 && pass.length <= 8)) {
+            alert('Please,provide min 3 & max 8 char in pass');
+            return false;
+        }
+        var cpass = document.forms["myform"]["cpass"].value;
+        if (cpass == "" || cpass == null) // for null condition 
+        {
+            alert('Please fill out the cpass');
+            return false;
+        }
+        if (pass == cpass) {
+
+        }
+        else {
+            alert('Please Enter Same values');
+            return false;
+        }
+        var email = document.forms["myform"]["email"].value;
+        if (email == "" || email == null) //for null condition 
+        {
+            alert('Please fill out the email');
+            return false;
+        }
+        var mail = /^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]{2,4}$/;
+        if (!mail.test(email)) {
+            alert('Please fill proper email id');
+            return false;
+        }
+        var pno = document.forms["myform"]["pno"].value;
+        if (pno == "" || pno == null) // for null condition 
+        {
+            alert('Please fill out the pno');
+            return false;
+        }
+        var phone = /^[0-9]{10,11}$/;
+        if (!phone.test(pno)) {
+            alert('Please fill only digits in PNO');
+            return false;
+        }
+
+
+        var gen_arr = document.getElementsByName("gender");
+        if (gen_arr[0].checked == true) {
+
+        }
+        else if (gen_arr[1].checked == true) {
+
+        }
+        else {
+            alert('! Please Select Gender');  // alert msg
+            return false;
+        }
+
+
+        var chk_arr = document.getElementsByName("chk");
+        if (chk_arr[0].checked == true) {
+
+        }
+        else if (chk_arr[1].checked == true) {
+
+        }
+        else if (chk_arr[2].checked == true) {
+
+        }
+        else if (chk_arr[3].checked == true) {
+
+        }
+        else {
+            alert('! Please Select any one Hobby ');  // alert msg
+            return false;
+        }
+    }
+</script>

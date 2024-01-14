@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-result-1</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Enter Your Result</h1>
+        <form action="" onsubmit="return result1()">
+
+            <label for="h">Hindi:</label>
+            <input type="number" id="hindi" required><br><br>
+            <label for="e">English:</label>
+            <input type="number" id="english" required><br><br>
+            <label for="g">Gujarati:</label>
+            <input type="number" id="gujarati" required><br><br>
+            <input type="submit" value="submit">
+
+            <p id="result"></p>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    function result1() 
+    {
+        var hindi = document.getElementById("hindi").value;
+        var english = document.getElementById("english").value;
+        var gujarati = document.getElementById("gujarati").value;
+
+        var total ;
+        var total =+hindi + +english + +gujarati;
+        var perc = (total *100)/300;
+        if (perc<=40) 
+        {
+            document.getElementById("result").innerHTML="Your Total is"+ total + "and perc % is"+perc+":Fail"
+
+            document.getElementById("result").style.color="red";
+            return false;
+        } 
+        else if (perc>40 && perc<=60) 
+        {
+            document.getElementById("result").innerHTML="Your Total is" + total + "and perc % is"+ perc + ": pass class";
+
+            document.getElementById("result").style.color="blue";
+            return false;
+        }
+        else if (perc>60 && perc<=70) 
+        {
+          document.getElementById("result").innerHTML="Your Total is" + total + "and perc %" + perc + ":First class"  
+
+          document.getElementById("result").style.color="blue";
+          return false;
+        }
+        else
+        {
+          document.getElementById("result").innerHTML="Your Total is"+ total + "and perc % is"+ perc + ":Dist class";
+          
+          document.getElementById("result").style.color="green";
+          return false;
+        }
+    }
+</script>
